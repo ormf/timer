@@ -22,7 +22,7 @@ GNU General Public License for more details.
 
 class Timer {
     constructor(display_element, sound_element) {
-        this.total = 5;
+        this.total = 30;
         this.todo = undefined;
         this.target = undefined;
         this.timer = undefined;
@@ -33,6 +33,7 @@ class Timer {
         this.mute = false;
         this.sound = sound_element;
         this.timedisplay = display_element;
+        this.inverted = false;
         this.reset();
         setInterval(this.tick.bind(this), 1000);
     }
@@ -52,23 +53,35 @@ class Timer {
             this.reset();
         }
     }
+    setovertime (bool) {
+        if (bool && !this.inverted) {
+            document.getElementById('timedisplay').setAttribute("class","overtimedigits");
+            this.inverted = true;
+        }
+        else if (!bool && this.inverted) {
+            document.getElementById('timedisplay').setAttribute("class","digits");
+            this.inverted = false;
+        }
+    }
     ring(){
-        this.sound.play();
+        if (!this.mute) this.sound.play();
+        document.getElementById('timedisplay').setAttribute("class","inverteddigits");
+        setTimeout(function(){this.stopRing()}.bind(this), 1000);
+        setTimeout(function(){this.stopflash()}.bind(this), 400);
     }
     stopRing(){
         this.sound.pause();
+    }
+    stopflash () {
+        document.getElementById('timedisplay').setAttribute("class","digits");        
     }
     tick(){
         if (this.running) {
             var now = this.now();
             this.todo -= (now-this.last_tick);
-            console.log(this.todo);
-            console.log(Math.round(this.todo/100));
             if (Math.round(this.todo/1000) == 0) {
-                if (!this.mute) {
-                    this.ring();
-                    setTimeout(function(){this.stopRing()}.bind(this), 1000);
-                }
+                this.ring();
+                setTimeout(function(){this.stopRing()}.bind(this), 1000);
                 switch (this.loop) {
                 case 0:
                     this.reset();
@@ -87,16 +100,21 @@ class Timer {
             this.last_tick = now;
         }
     }
+
+
     displaytime(){
         var time = Math.round(this.todo/1000);
         if (this.up){
             time = this.total-time;
         }
+        if (time < 0) time *= -1;
+        time = Math.abs(time);
         var hours = Math.floor((time % (60 * 60 * 24)) / (60 * 60));
         var minutes = Math.floor((time % (60 * 60)) / 60);
         var seconds = Math.floor(time % 60);
         [hours, minutes, seconds] = [hours, minutes, seconds].map((a) => a.toLocaleString('en', {minimumIntegerDigits:2}))
         this.timedisplay.innerHTML = `${hours}:${minutes}:${seconds}`;
+        this.setovertime(Math.round(this.todo/1000) < 0);
     }
     start(){
         this.last_tick = this.now();
@@ -162,13 +180,13 @@ function createSel(max) {
     return selector
 }
 
+
 //--------------------- Init --------------------------------------------------
 
 var timer;
 
 function init(){
     timer = new Timer(document.getElementById("timedisplay"),document.getElementById("alarm-sound"));
-
     document.getElementById('ttoggle').addEventListener("click", function(){
         if (timer.running) {
             timer.pause();
