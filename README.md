@@ -16,4 +16,4 @@ Features:
 - Background turns red if time limit is exceeded.
 
 Written by Ugo Finnendahl and Orm Finnendahl. Licensed under the GPL
-v3.0 license or later.
+v2.0 license or later.
