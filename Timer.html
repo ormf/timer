@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Timer
+    </title>
+    <link href="timer.css" rel="stylesheet">
+    <script src="timer.js"></script>
+  </head>
+  <body>
+    <!-- [CURRENT TIME] -->
+    <div id="ctime">
+      <div class="square">
+        <div class="digits" id="timedisplay">00:00:00</div>
+        <div class="text">Zeit</div>
+      </div>
+    </div>
+
+    <!-- [SET ALARM] -->
+    <div id="tpick">
+      <div>
+        <input type="button" value="" id="ttoggle"
+               data-onurl="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/pause.svg"
+               data-offurl="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/play.svg"/>
+        <input type="button" value="" id="treset"/>
+        <input type="button" value="" id="tdirection"
+               data-onurl="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/up.svg"
+               data-offurl="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/down.svg"/>
+        <input type="button" value="" id="tloop"
+               data-url0="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/repeat.svg"
+               data-url1="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/once.svg"
+               data-url2="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/infinity.svg"/>
+        <!-- <input type="button" value="" id="tautostop"/> -->
+        <input type="button" value="" id="tmute"
+               data-onurl="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/mute.svg"
+               data-offurl="http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/unmute.svg"/>
+        <!-- <input type="button" value="" id="thelp"/> -->
+      </div>
+      <h2 class="subheader">
+        Set Timer
+      </h2>
+      <div id="tpick-h"></div>
+      <div id="tpick-m"></div>
+      <div id="tpick-s"></div>
+    </div>
+
+    <!-- [ALARM SOUND] -->
+    <audio id="alarm-sound" loop>
+      <source src="snd/wake-up-sound.mp3" type="audio/mp3">
+    </audio>
+  </body>
+</html>
