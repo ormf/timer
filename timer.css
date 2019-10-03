@@ -119,7 +119,7 @@ GNU General Public License for more details.
     width: 10vw;
     height: 10vw;
     background: #f2f2f2;
-    background-image: url('http://selma.hfmdk-frankfurt.de/finnendahl/timer-maren/img/previous.svg');
+    background-image: url('./img/previous.svg');
     background-size: 100% 100%;
     padding: 10px;
     border: 0;
