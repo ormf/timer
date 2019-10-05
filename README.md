@@ -26,7 +26,7 @@ https://selma.hfmdk-frankfurt.de/finnendahl/timer/
 
 The function of the five buttons (from left to right):
 
-### First Button - Start/Stop
+![alt/text] (img/start.svg)
 
 ### Second Button - Reset
 
