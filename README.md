@@ -28,11 +28,11 @@ The function of the five buttons (from left to right):
 
 [[img/play.svg]] - Start/Stop
 
-![alt/text] (img/play.svg)
+![alt text] (img/play.svg)
 
-![alt/text] (https://github.com/ormf/timer/blob/master/img/play.svg?sanitize=1)
+![alt text] (https://github.com/ormf/timer/blob/master/img/play.svg?sanitize=1)
 
-![alt/text] (img/play.svg?sanitize=1)
+![Alt text] (img/play.svg?raw=1?sanitize=1)
 
 [[https://raw.githubusercontent.com/ormf/timer/master/img/play.svg?sanitize=true]]
 
