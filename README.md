@@ -32,7 +32,7 @@ buttons):
 
 <img src = "./img/previous.svg" width="50px"> Reset
 
-<img src = "./img/up.svg" width="50px"> <img src = "./img/down.svg" width="50px"> Up/down
+<img src = "./img/up.svg" width="50px"> <img src = "./img/down.svg" width="50px"> Up/Down
 
 <img src = "./img/repeat.svg" width="50px"> <img src = "./img/autostop.svg" width="50px"> <img src = "./img/infinity.svg" width="50px"> Repeat Mode/Autostop Mode/Non-Stop Mode
 
