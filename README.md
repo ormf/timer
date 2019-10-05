@@ -17,9 +17,8 @@ Features:
 
 ## Install
 
-Git Clone the repository at https//:github.com/ormf/timer
-and open Timer.html in a browser. Before cloning
-you can check it out at this URL:
+Download or clone the repository and open Timer.html in a
+browser. Before downloading you can check it out at this URL:
 
 https://selma.hfmdk-frankfurt.de/finnendahl/timer/
 
