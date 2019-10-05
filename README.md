@@ -34,8 +34,8 @@ The function of the five buttons (from left to right):
 
 ![Alt text] (relative/img/play.svg)
 
-![Alt text] (./img/play.svg)
-<img src = "./img/play.svg">
+
+<img src = "./img/play.svg" width="20%">
 
 ![Alt text] (https://github.com/ormf/timer/blob/master/img/play.svg?sanitize=1)
 
