@@ -34,7 +34,7 @@ The function of the five buttons (from left to right):
 
 ![alt/text] (img/play.svg?sanitize=1)
 
-![alt/text] (https://raw.githubusercontent.com/ormf/timer/master/img/play.svg?sanitize=true)
+[[https://raw.githubusercontent.com/ormf/timer/master/img/play.svg?sanitize=true]]
 
 
 ### Second Button - Reset
