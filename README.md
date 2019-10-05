@@ -26,31 +26,17 @@ https://selma.hfmdk-frankfurt.de/finnendahl/timer/
 
 The function of the five buttons (from left to right):
 
-[[relative/img/play.svg?sanitize=1]] - Start/Stop
+<img src = "./img/play.svg" width="50px"><img src = "./img/pause.svg" width="50px"> - Play/Stop
 
-[[relative/img/play.svg?raw=1]] - Start/Stop
+<img src = "./img/previous.svg" width="50px"> - Reset
 
-[[relative/img/play.svg?sanitize=1?raw=1]] - Start/Stop
+<img src = "./img/up.svg" width="50px"> <img src = "./img/down.svg" width="50px"> - Up/down
 
-![Alt text] (relative/img/play.svg)
+<img src = "./img/repeat.svg" width="50px"> <img src = "./img/autostop.svg" width="50px"> <img src = "./img/infinity.svg" width="50px"> - Repeat Mode/Autostop Mode/Non-Stop Mode
 
+<img src = "./img/mute.svg" width="50px"> <img src = "./img/unmute.svg" width="50px"> - Mute/Unmute
 
-<img src = "./img/play.svg" width="20%">
-
-![Alt text] (https://github.com/ormf/timer/blob/master/img/play.svg?sanitize=1)
-
-![Alt text] (relative/img/play.svg?raw=1?sanitize=1)
-
-[[https://raw.githubusercontent.com/ormf/timer/master/img/play.svg?sanitize=true]]
-
-
-### Second Button - Reset
-
-### Third button - Up/down
-
-### Fourth Button - Repeat Mode/Autostop Mode/Non-Stop Mode
-
-### Fifth Button - Mute/Unmute
+<img src = "./img/help.svg" width="50px"> - Load this README
 
 The Popup Menus below the "Set Timer" set the Time for Hours, Minutes
 and Seconds.
