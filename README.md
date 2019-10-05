@@ -24,17 +24,19 @@ https://selma.hfmdk-frankfurt.de/finnendahl/timer/
 
 ## Usage
 
-The function of the five buttons (from left to right):
+The function of the five buttons below the time display (multiple
+buttons in one row show the different states when clicking the
+buttons):
 
-<img src = "./img/play.svg" width="50px"><img src = "./img/pause.svg" width="50px"> - Play/Stop
+<img src = "./img/play.svg" width="50px"><img src = "./img/pause.svg" width="50px"> Play/Stop
 
-<img src = "./img/previous.svg" width="50px"> - Reset
+<img src = "./img/previous.svg" width="50px"> Reset
 
-<img src = "./img/up.svg" width="50px"> <img src = "./img/down.svg" width="50px"> - Up/down
+<img src = "./img/up.svg" width="50px"> <img src = "./img/down.svg" width="50px"> Up/down
 
-<img src = "./img/repeat.svg" width="50px"> <img src = "./img/autostop.svg" width="50px"> <img src = "./img/infinity.svg" width="50px"> - Repeat Mode/Autostop Mode/Non-Stop Mode
+<img src = "./img/repeat.svg" width="50px"> <img src = "./img/autostop.svg" width="50px"> <img src = "./img/infinity.svg" width="50px"> Repeat Mode/Autostop Mode/Non-Stop Mode
 
-<img src = "./img/mute.svg" width="50px"> <img src = "./img/unmute.svg" width="50px"> - Mute/Unmute
+<img src = "./img/mute.svg" width="50px"> <img src = "./img/unmute.svg" width="50px"> Mute/Unmute
 
 <img src = "./img/help.svg" width="50px"> - Load this README
 
