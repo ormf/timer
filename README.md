@@ -26,9 +26,12 @@ https://selma.hfmdk-frankfurt.de/finnendahl/timer/
 
 The function of the five buttons (from left to right):
 
-[[img/play.svg|alt=start/stop]] - Start/Stop
+[[img/play.svg]] - Start/Stop
 
-![alt/text] (img/start.svg)
+![alt/text] (img/play.svg)
+
+![alt/text] (https://github.com/ormf/timer/blob/master/img/play.svg)
+
 
 ### Second Button - Reset
 
