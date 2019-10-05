@@ -15,5 +15,12 @@ Features:
 
 - Background turns red if time limit is exceeded.
 
+## Install
+
+clone the repository and open Timer.html in a browser. Before cloning
+you can also check it out first at this URL:
+
+https://selma.hfmdk-frankfurt.de/finnendahl/timer/
+
 Written by Ugo Finnendahl and Orm Finnendahl. Licensed under the GPL
 v2.0 or later.
