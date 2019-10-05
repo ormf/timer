@@ -30,7 +30,7 @@ The function of the five buttons (from left to right):
 
 ![alt/text] (img/play.svg)
 
-![alt/text] (https://github.com/ormf/timer/blob/master/img/play.svg)
+![alt/text] (https://github.com/ormf/timer/blob/master/img/play.svg/sanitize=1)
 
 
 ### Second Button - Reset
