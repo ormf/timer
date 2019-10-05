@@ -17,7 +17,8 @@ Features:
 
 ## Install
 
-Clone the repository and open Timer.html in a browser. Before cloning
+Git Clone the repository at https//:github.com/ormf/timer
+and open Timer.html in a browser. Before cloning
 you can check it out at this URL:
 
 https://selma.hfmdk-frankfurt.de/finnendahl/timer/
@@ -28,7 +29,7 @@ The function of the five buttons below the time display (multiple
 buttons in one row show the different states when clicking the
 buttons):
 
-<img src = "./img/play.svg" width="50px"><img src = "./img/pause.svg" width="50px"> Play/Stop
+<img src = "./img/play.svg" width="50px"> <img src = "./img/pause.svg" width="50px"> Play/Stop
 
 <img src = "./img/previous.svg" width="50px"> Reset
 
@@ -38,7 +39,7 @@ buttons):
 
 <img src = "./img/mute.svg" width="50px"> <img src = "./img/unmute.svg" width="50px"> Mute/Unmute
 
-<img src = "./img/help.svg" width="50px"> - Load this README
+<img src = "./img/help.svg" width="50px"> Load this README
 
 The Popup Menus below the "Set Timer" set the Time for Hours, Minutes
 and Seconds.

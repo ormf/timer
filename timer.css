@@ -114,7 +114,7 @@ GNU General Public License for more details.
   margin: 20px 0;
 }
 
-#treset, #ttoggle, #tdirection, #tloop, #tautostop, #tmute, #thelp {
+#treset, #ttoggle, #tdirection, #tloop, #tautostop, #tmute {
     box-sizing: padding-box;
     width: 10vw;
     height: 10vw;
@@ -125,3 +125,14 @@ GNU General Public License for more details.
     border: 0;
     cursor: pointer;
 }
+
+#thelp {
+    box-sizing: padding-box;
+    width: 10vw;
+    height: 10vw;
+    background: #f2f2f2;
+    background-image: url('./img/help.svg');
+    background-size: 100% 100%;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
