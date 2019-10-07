@@ -55,17 +55,17 @@ class Timer {
     }
     setovertime (bool) {
         if (bool && !this.inverted) {
-            document.getElementById('timedisplay').setAttribute("class","overtimedigits");
+            document.getElementById('timedisplay').classList.add("overtimedigits");
             this.inverted = true;
         }
         else if (!bool && this.inverted) {
-            document.getElementById('timedisplay').setAttribute("class","digits");
+            document.getElementById('timedisplay').classList.remove("overtimedigits");
             this.inverted = false;
         }
     }
     ring(){
         if (!this.mute) this.sound.play();
-        document.getElementById('timedisplay').setAttribute("class","inverteddigits");
+        document.getElementById('timedisplay').classList.add("inverteddigits");
         setTimeout(function(){this.stopRing()}.bind(this), 1000);
         setTimeout(function(){this.stopflash()}.bind(this), 400);
     }
@@ -73,7 +73,7 @@ class Timer {
         this.sound.pause();
     }
     stopflash () {
-        document.getElementById('timedisplay').setAttribute("class","digits");        
+        document.getElementById('timedisplay').setAttribute("class","digits");
     }
     tick(){
         if (this.running) {
@@ -92,7 +92,7 @@ class Timer {
                     this.displaytime();
                     break;
                 default:
-                    this.displaytime();                    
+                    this.displaytime();
                 }
             } else {
                 this.displaytime();
@@ -182,7 +182,6 @@ function createSel(max) {
 
 
 //--------------------- Init --------------------------------------------------
-
 var timer;
 
 function init(){
