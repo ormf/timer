@@ -20,7 +20,7 @@ Features:
 Download or clone the repository and open Timer.html in a
 browser. Before downloading you can check it out at this URL:
 
-https://selma.hfmdk-frankfurt.de/finnendahl/timer/
+[https://selma.hfmdk-frankfurt.de/finnendahl/timer/](https://selma.hfmdk-frankfurt.de/finnendahl/timer/)
 
 ## Usage
 
@@ -44,4 +44,4 @@ The Popup Menus below the "Set Timer" set the Time for Hours, Minutes
 and Seconds.
 
 Written by Ugo Finnendahl and Orm Finnendahl. Licensed under the GPL
-v2.0 or later.
+v2.0 or later.`
