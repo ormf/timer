@@ -182,9 +182,27 @@ function createSel(max) {
 
 
 //--------------------- Init --------------------------------------------------
+var images = [];
+
+function preload() {
+  var max = images.length;
+    for (var i = max; i < max+arguments.length; i++) {
+      console.log(preload.arguments[i-max]);
+        images[i] = new Image();
+        images[i].src = preload.arguments[i-max];
+    }
+}
+
 var timer;
 
 function init(){
+    [document.getElementById('ttoggle'),
+     document.getElementById('tdirection'),
+     document.getElementById('tmute')].map((a) => preload(a.dataset.onurl,a.dataset.offurl));
+    preload(document.getElementById('tloop').dataset.url0,
+    document.getElementById('tloop').dataset.url1,
+    document.getElementById('tloop').dataset.url2)
+
     timer = new Timer(document.getElementById("timedisplay"),document.getElementById("alarm-sound"));
     document.getElementById('ttoggle').addEventListener("click", function(){
         if (timer.running) {
