@@ -55,17 +55,17 @@ class Timer {
     }
     setovertime (bool) {
         if (bool && !this.inverted) {
-            document.getElementById('timedisplay').setAttribute("class","overtimedigits");
+            document.getElementById('timedisplay').classList.add("overtimedigits");
             this.inverted = true;
         }
         else if (!bool && this.inverted) {
-            document.getElementById('timedisplay').setAttribute("class","digits");
+            document.getElementById('timedisplay').classList.remove("overtimedigits");
             this.inverted = false;
         }
     }
     ring(){
         if (!this.mute) this.sound.play();
-        document.getElementById('timedisplay').setAttribute("class","inverteddigits");
+        document.getElementById('timedisplay').classList.add("inverteddigits");
         setTimeout(function(){this.stopRing()}.bind(this), 1000);
         setTimeout(function(){this.stopflash()}.bind(this), 400);
     }
@@ -73,7 +73,7 @@ class Timer {
         this.sound.pause();
     }
     stopflash () {
-        document.getElementById('timedisplay').setAttribute("class","digits");        
+        document.getElementById('timedisplay').setAttribute("class","digits");
     }
     tick(){
         if (this.running) {
@@ -92,7 +92,7 @@ class Timer {
                     this.displaytime();
                     break;
                 default:
-                    this.displaytime();                    
+                    this.displaytime();
                 }
             } else {
                 this.displaytime();
@@ -182,10 +182,27 @@ function createSel(max) {
 
 
 //--------------------- Init --------------------------------------------------
+var images = [];
+
+function preload() {
+  var max = images.length;
+    for (var i = max; i < max+arguments.length; i++) {
+      console.log(preload.arguments[i-max]);
+        images[i] = new Image();
+        images[i].src = preload.arguments[i-max];
+    }
+}
 
 var timer;
 
 function init(){
+    [document.getElementById('ttoggle'),
+     document.getElementById('tdirection'),
+     document.getElementById('tmute')].map((a) => preload(a.dataset.onurl,a.dataset.offurl));
+    preload(document.getElementById('tloop').dataset.url0,
+    document.getElementById('tloop').dataset.url1,
+    document.getElementById('tloop').dataset.url2)
+
     timer = new Timer(document.getElementById("timedisplay"),document.getElementById("alarm-sound"));
     document.getElementById('ttoggle').addEventListener("click", function(){
         if (timer.running) {
